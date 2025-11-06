@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promosi BRI/BNI Agent & Kios Susanti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Untuk ikon -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .promo {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .promo:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .promo h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .promo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .promo img:hover {
+            transform: scale(1.05);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+            font-size: 1.1em;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ul li:before {
+            content: '\f00c';
+            /* Check icon from Font Awesome */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: #28a745;
+            position: absolute;
+            left: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            transition: background 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #218838;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            animation: slideInFromBottom 1s ease-out;
+        }
+
+        /* Animasi Keyframes */
+        @keyframes slideInFromTop {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .promo {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-bank"></i> Selamat Datang di BRI/BNI Agent & Kios Susanti</h1>
+        <p>Layanan Perbankan Terdekat untuk Kebutuhan Anda</p>
+    </header>
+
+    <section>
+        <div class="promo">
+            <h2><i class="fas fa-info-circle"></i> Tentang Kami</h2>
+            <p>Kios Susanti adalah agen resmi BRI/BNI yang menyediakan layanan perbankan praktis seperti transfer uang,
+                pembayaran tagihan, dan layanan keuangan lainnya. Kami hadir untuk memudahkan hidup Anda dengan akses
+                mudah dan cepat.</p>
+            <img src="https://via.placeholder.com/600x300?text=Gambar+Kios+Susanti" alt="Kios Susanti">
+        </div>
+
+        <div class="promo">
+            <h2><i class="fas fa-cogs"></i> Layanan Kami</h2>
+            <ul>
+                <li>Transfer antar bank</li>
+                <li>Pembayaran listrik, air, dan telepon</li>
+                <li>Penarikan tunai</li>
+                <li>Deposit dan penarikan tabungan</li>
+                <li>Konsultasi keuangan</li>
+            </ul>
+            <a href="#kontak" class="btn">Hubungi Kami Sekarang</a>
+        </div>
+
+        <div class="promo">
+            <h2><i class="fas fa-star"></i> Keunggulan BRI/BNI Agent</h2>
+            <p>Dengan jaringan luas BRI dan BNI, kami menawarkan kemudahan tanpa harus ke bank besar. Lokasi strategis,
+                jam operasional fleksibel, dan pelayanan ramah.</p>
+        </div>
+
+        <div class="promo" id="kontak">
+            <h2><i class="fas fa-phone"></i> Kontak Kami</h2>
+            <p>Alamat: [Ringin Sari]<br>
+                Telepon: [Masukkan nomor telepon]<br>
+                Jam Operasional: Senin - Minggu, 08:00 - 20:00</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kios Susanti - Agen BRI/BNI. Semua hak dilindungi. <i class="fas fa-heart"></i></p>
+    </footer>
+
+    <script>
+        // Animasi scroll sederhana
+        const promos = document.querySelectorAll('.promo');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0s';
+                }
+            });
+        });
+        promos.forEach(promo => observer.observe(promo));
+    </script>
+</body>
+
+</html>
